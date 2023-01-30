@@ -1,6 +1,15 @@
 @import "../../../../assets/theme/colors";
 @import "../../../../assets/theme/functions";
 
+.carousel {
+  max-width: 1920px;
+}
+
+.link:focus {
+  border: 2px solid white;
+  box-shadow: 7px 5px 3px #857f7f;;
+}
+
 .bq-title{
   color: var(--productTitle) !important;
 }

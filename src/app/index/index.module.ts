@@ -18,7 +18,7 @@ import { SharedModule } from '../shared/shared.module';
 	imports: [ CommonModule, ProductModule, SharedModule, RouterModule.forChild(IndexRoutes) ],
 	declarations: [ IndexComponent, NavbarComponent, LoginComponent, FooterComponent ],
 	schemas: [ NO_ERRORS_SCHEMA ],
-	exports: [ NavbarComponent, FooterComponent ],
+  exports: [NavbarComponent, FooterComponent, IndexComponent],
 	providers: []
 })
 export class IndexModule {}

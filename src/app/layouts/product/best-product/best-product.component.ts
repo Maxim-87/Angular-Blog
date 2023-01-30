@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { TranslateService } from 'src/app/shared/services/translate.service';
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/shared/models/product';
@@ -25,6 +26,7 @@ export class BestProductComponent implements OnInit {
 			responsive: {
 				'0': { items: 1, margin: 5 },
 				'430': { items: 2, margin: 5 },
+        // tslint:disable-next-line
 				'550': { items: 3, margin: 5 },
 				'670': { items: 4, margin: 5 }
 			},
@@ -60,7 +62,7 @@ export class BestProductComponent implements OnInit {
 				 });
 			},
 
-			
+
 
 
 			(error) => {

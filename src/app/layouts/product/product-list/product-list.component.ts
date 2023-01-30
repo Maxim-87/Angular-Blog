@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../../shared/models/product';
 import { AuthService } from '../../../shared/services/auth.service';
@@ -11,7 +12,7 @@ import { ToastrService } from 'src/app/shared/services/toastr.service';
 export class ProductListComponent implements OnInit {
 	productList: Product[];
 	loading = false;
-	
+
 	selectedBrand: 'All';
 
 	page = 1;

@@ -3,30 +3,13 @@
   <div class="row" *ngIf="authService.isAdmin()">
     <div class="col-sm">
       <div class="float-right">
-       <!--  <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#exampleModalLong">
-          Add Blog
-        </button> -->
-
-        <!-- <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#exampleModalLong">
-          Add Blog
-        </button> -->
-
         <a class="btn btn-primary" [routerLink]="['/products/add-products']">Add Blogs</a>
       </div>
     </div>
   </div>
 
-  
+
   <div class="row">
-<!--     <div class="col-md-3">
-      <div class="form-group">
-        <label for="brand_select">By Brands:</label>
-        <select class="form-control" name="" id="brand_select" [(ngModel)]="selectedBrand">
-          <option *ngFor="let brand of brands" [ngValue]="brand">{{brand}}</option>
-        </select>
-      </div>
-      
-    </div> -->
     <div class="col-md-9">
 
       <div class="container">
@@ -39,7 +22,7 @@
                 <!--Card-->
                 <div class="card card-cascade wider">
                   <!--Card image-->
-                  <a [routerLink]="['/products/product', product.$key]">
+                  <a [routerLink]="['/products/product', product.$key]" title="{{product.productImageUrl}}">
                     <div class="view overlay hm-white-slight">
                       <img [src]="product.productImageUrl" class="img-fluid" alt="" width="360px" height="640px">
                       <a>
@@ -65,7 +48,7 @@
                     </p>
                     <!--Card footer-->
                     <div class="card-footer">
-                    
+
                       <span class="right">
                         <a placement="top" mdbTooltip="Add to Favourite" container="body" (click)="addFavourite(product)">
                           <i class="fa fa-heart"></i>
@@ -91,9 +74,9 @@
           </div>
         </div>
         <!-- Pagination -->
-        <div class="text-center mt-3">
-          <pagination-controls (pageChange)="page = $event"></pagination-controls>
-        </div>
+<!--        <div class="text-center mt-3">-->
+<!--          <pagination-controls (pageChange)="page = $event"></pagination-controls>-->
+<!--        </div>-->
       </div>
       <!--/.Card-->
     </div>

@@ -1,7 +1,7 @@
 <!-- Carousel -->
 <div class="container">
   <!--Carousel Wrapper-->
-  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" aria-label="blogs">
     <!--Indicators-->
     <ol class="carousel-indicators">
       <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -10,8 +10,8 @@
     </ol>
     <!--/.Indicators-->
     <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
+    <div class="carousel-inner" role="listbox"  aria-label="examples">
+      <div class="carousel-item active" role="option" aria-label="blogs">
         <div class="view">
           <img class="d-block w-100" src="../../assets/banner_img/img1.jpg" alt="First slide">
           <div class="mask rgba-black-light"></div>
@@ -21,7 +21,7 @@
           <p>Explore Blogs, the world's most powerful Informatory source</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" role="option" aria-label="Angular,SPA">
         <!--Mask color-->
         <div class="view">
           <img class="d-block w-100" src="../../assets/banner_img/img3.jpg" alt="Third slide">
@@ -30,11 +30,10 @@
         <div class="carousel-caption">
           <h3 class="h3-responsive"> Angular,SPA</h3>
           <p>Angular creates beautifully designed pages with premium build quality & brings the best change
-
           </p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" role="option" aria-label="Bootstrap">
         <!--Mask color-->
         <div class="view">
           <img class="d-block w-100" src="../../assets/banner_img/img2.jpg" alt="Third slide">
@@ -62,5 +61,5 @@
   <br>
   <app-best-product></app-best-product>
   <app-footer></app-footer>
-  
+
 </div>
